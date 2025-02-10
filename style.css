@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: #00b6c4;
+
+}
+.container{
+    background: #f5f5f5;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 10px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    
+}
+.header{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.header h1{
+    margin-bottom: 10px;
+    font-size: 24px;
+
+}
+.header h3{
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 5px;
+}
+.img-area {
+    text-align: center; /* Căn giữa ảnh nếu cần */
+    margin: 5px 5px; /* Khoảng cách trên dưới */
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 25px auto;
+    border: 15px groove deepskyblue;
+}
+
+
+.img-area img {
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng của img-area */
+  
+}
+.header h1{
+    margin-bottom: 10px;
+}
+.header h3{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+   
+}
+.main{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+.left{
+    flex:1;
+    padding: 15px;
+    margin-left: 30px;
+}
+
+
+.left p{
+    line-height: 2;
+}
+.left ul li{
+    line-height: 2;
+    margin-left: 20px;
+}
+h2{
+    background: #00b6c4;
+    padding: 15px;
+    color:#fff ;
+    margin: 30px 0;
+    font-size: 20px;
+    border-radius:0 25px 25px 0 ;
+    width: auto;
+}
+.right{
+    flex: 1;
+    padding:15px ;
+    margin-right: 20px;
+ 
+}
+
+.right h3{
+    margin-bottom: 15px;
+}
+.right p{
+    line-height: 2;
+}
+.right ul li{
+    line-height: 2;
+    margin-left: 20px;
+}
+@media only screen and (max-width: 768px) and(max-width: 991px){
+    .container{
+        width: 95%;
+        height: auto;
+    }
+    h2{
+        font-size:  10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main{
+        flex-direction: column;
+    }
+    .left,
+    .right{
+        flex: none;
+        width: 100%;
+    }
+    .right{
+        margin-left: 30px;
+    }
+    .container{
+        width: 95%;
+        height: auto;
+    }
+    h2{
+        font-size:  15px;
+    }
+}
